@@ -5,7 +5,7 @@ name: Java CI with Maven
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "main", "dev" ]
   pull_request:
     branches: [ "main" ]
 
@@ -27,3 +27,6 @@ jobs:
 
     - name: Test the App
       run: mvn test
+
+    - name: Welcome 
+      run: echo "Hello World"
